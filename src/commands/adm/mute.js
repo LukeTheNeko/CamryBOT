@@ -6,6 +6,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName('mute')
     .setDescription('🔇Mutar um usuário.')
+    .setDefaultMemberPermissions(Discord.PermissionFlagsBits.MuteMembers)
     .addUserOption(option =>
       option.setName('usuario')
         .setDescription('Selecione o usuário a ser mutado.')

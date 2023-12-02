@@ -5,6 +5,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName('unmute')
     .setDescription('🔊 Desmutar um usuário.')
+    .setDefaultMemberPermissions(Discord.PermissionFlagsBits.MuteMembers)
     .addUserOption(option =>
       option.setName('usuario')
         .setDescription('Selecione o usuário a ser desmutado.')

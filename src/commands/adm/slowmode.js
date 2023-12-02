@@ -5,6 +5,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName('slowmode')
     .setDescription('🐢 Define o modo lento em um canal')
+    .setDefaultMemberPermissions(Discord.PermissionFlagsBits.ManageChannels)
     .addChannelOption((option) =>
       option.setName('canal').setDescription('Canal onde o modo lento será ativado').setRequired(true)
     )

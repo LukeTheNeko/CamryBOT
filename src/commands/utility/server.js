@@ -5,6 +5,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName('server')
     .setDescription('🔣 View server icon or banner.')
+    .setDefaultMemberPermissions(Discord.PermissionFlagsBits.Administrator)
     .addSubcommand(subcommand =>
       subcommand
         .setName('icon')

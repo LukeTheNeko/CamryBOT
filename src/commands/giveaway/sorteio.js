@@ -11,6 +11,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('sorteio')
         .setDescription('🎁 Crie um sorteio no servidor')
+        .setDefaultMemberPermissions(Discord.PermissionFlagsBits.Administrator)
         .addStringOption(option =>
             option.setName('prêmios')
                 .setDescription('Prêmios separados por vírgula (ex: "Prêmio 1, Prêmio 2")')

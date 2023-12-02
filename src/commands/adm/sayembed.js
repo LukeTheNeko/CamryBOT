@@ -11,6 +11,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('sayembed')
         .setDescription('📃 Cria uma mensagem em embed')
+        .setDefaultMemberPermissions(Discord.PermissionFlagsBits.Administrator)
         .addStringOption(option =>
             option.setName('titulo')
                 .setDescription('O título do embed')

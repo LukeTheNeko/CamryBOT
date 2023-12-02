@@ -6,6 +6,7 @@ const roles = require('../../config/roles.json');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('notificação')
+    .setDefaultMemberPermissions(Discord.PermissionFlagsBits.Administrator)
     .setDescription('Lista de Notificações'),
 
   async execute(interaction) {

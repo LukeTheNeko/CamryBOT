@@ -9,6 +9,7 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('say')
         .setDescription('📃 Faz o bot falar qualquer coisa')
+        .setDefaultMemberPermissions(Discord.PermissionFlagsBits.Administrator)
         .addStringOption(option =>
             option.setName('mensagem')
                 .setDescription('A mensagem que o bot deve falar')

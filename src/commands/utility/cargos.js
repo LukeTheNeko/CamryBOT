@@ -5,6 +5,7 @@ const Discord = require("discord.js")
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('cargos')
+    .setDefaultMemberPermissions(Discord.PermissionFlagsBits.Administrator)
     .setDescription('Lista de Cargos'),
 
   async execute(interaction) {
